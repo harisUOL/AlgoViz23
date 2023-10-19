@@ -1,0 +1,48 @@
+{% extends "algoviz/base.html" %} {% load static %} {% block content %}
+<div class="container">
+  <form class="form-inline my-2 my-lg-0" action="#" method="get">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="category-select"
+          >Search by category:</label
+        >
+      </div>
+      <select class="custom-select" id="category-select" name="category">
+        <option value="all">All algorithms</option>
+        <option value="backtracking">Backtracking algorithms</option>
+        <option value="randomised">Randomised algorithms</option>
+        <option value="recursive">Recursive Algorithms</option>
+        <option value="dynamic programming">Dynamic Programming algorithms</option>
+        <option value="greedy">Greedy algorithms</option>
+        <option value="brute force">Brute Force algorithms</option>
+        <option value="divide & conquer">Divide & Conquer algorithms</option>
+      </select>
+    </div>
+    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">
+      Search
+    </button>
+  </form>
+  <br />
+  {% for algorithm in algorithms %}
+  <article class="media content-section">
+    <!-- <img class="rounded-circle article-img" src="{{ algorithm.contributor.profile.image.url }}"> -->
+    <div class="media-body">
+      <div class="article-metadata">
+        <!-- <a class="mr-2" href="#">{{ algorithm.contributor }}</a> -->
+        <small class="text-muted"
+          >{{ algorithm.date_posted|date:"F d, Y" }}</small
+        >
+      </div>
+      <h2>
+        <a
+          class="article-title"
+          href="{% url 'algorithm-details' algorithm.id  %}"
+          >{{ algorithm.name }}</a
+        >
+      </h2>
+      <p class="article-content">{{ algorithm.description }}</p>
+    </div>
+  </article>
+  {% endfor %}
+</div>
+{% endblock content %}

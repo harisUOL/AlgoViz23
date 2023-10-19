@@ -1,0 +1,4 @@
+Admin Login details :-
+
+user: harismoin
+password: algoviz23

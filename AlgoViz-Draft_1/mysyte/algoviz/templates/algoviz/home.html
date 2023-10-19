@@ -1,0 +1,72 @@
+{% extends "algoviz/base.html" %} 
+{% load static %}
+{% block content %}
+<div class="container">
+  <img class="d-block w-100" src="{% static 'HomeImgaeFront.png' %}" alt="image">
+  <br>
+  <a  href="myapp/"><div class="card">
+    <div class="card-body m-0" style="background-color: rgb(0, 140, 255);">
+      <h5 class="card-title" style="color: white;">Go Straight to the Terminal</h5>
+      <p class="card-text" style="color: rgb(255, 255, 255);">An interactive code visualizing application equiped with loads of algorithms</p>
+    </div>
+    <img class="card-img-bottom " src="{% static 'Viz1.jpg' %}" alt="Card image cap">
+  </div></a>
+  <br>
+  <div class="card text-center"> 
+    
+    <div class="card-body" style="background-color: rgb(212, 167, 255);">
+      <img src="{% static 'default.png' %}"
+      alt="User"
+      class="rounded-circle img-fluid mr-1 mt-4 mb-4"
+      style="width: 200px; height: 200px" alt="default">
+      <h5 class="card-title" style="color: white;">Become a Contributor</h5>
+      <p class="card-text" style="color: rgb(0, 0, 0);">Support the Cause and help other learners</p>
+      <a href="{% url 'register' %}" class="btn btn-primary mb-4" style="padding: 10px 100px ;">Sign Up</a>
+    </div>
+    
+  </div>
+<br>
+<div class="card-deck ">
+  <div class="card" style="background-color:lightblue;">
+    <img class="card-img-top" src="{% static 'pseudo.png' %}" alt="Card image cap">
+    <div class="card-body" style="text-align: center;">
+      <h5 class="card-title" style="color:black">Pseduo Codes could be tough</h5>
+    </div>
+  </div>
+  <div class="card" style="background-color: lightblue;">
+    <img class="card-img-top" src="{% static 'flow.png' %}" alt="Card image cap">
+    <div class="card-body" style="text-align: center;">
+      <h5 class="card-title" style="color:black">Might get lost in Flow Charts</h5>
+    </div>
+  </div>
+  
+</div>
+  
+<br>
+  
+    <section class="py-5  shadow p-3 mb-5 rounded" style="background-color: rgb(213, 230, 223);">
+    <h3 style="text-align: center;">Contact the Developer</h3>
+    <hr>
+    <br>
+      <div class="row" style="text-align: center;">
+        <div class="col-sm-4">
+        <h4>Email:</h4>
+        <p>haris88@gmail.com</p>
+      </div>
+      <div class="col-sm-4" style="text-align: center;">
+        <h4>Phone:</h4>
+        <p>+91 7865432672</p>
+      </div>
+      <div class="col-sm-4" style="text-align: center;">
+        <h4>Github Repository:</h4>
+        <p>
+          <a href="#"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+          
+        </p>
+      </div>
+    </section>
+    </div>
+<br>
+
+</div>
+{% endblock content %}

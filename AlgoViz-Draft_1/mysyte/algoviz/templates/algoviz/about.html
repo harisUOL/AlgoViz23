@@ -1,0 +1,22 @@
+{% extends "algoviz/base.html" %} 
+{% load static %}
+{% block content %}
+
+  <div class="container">
+    <section class="">
+        <div class="">
+          <!-- <img src="{% static 'default.jpg' %}" class="pic"> -->
+          <div class="text">
+            <h2>About </h2>
+            <div class="data">
+            </div>
+        </div>
+        <p style="  font-family: 'Helvetica Neue', Arial, sans-serif; line-height: 2.0; font-size: 1.2rem;">Algorithm Visualizer is an interactive web-based platform enriched with lots of algorithms and code snippets contributed by its users which range in a categories such as Greedy algorithms, Divide and Conquer algorithms and many more. This platform serves its users with the hands-on visual representation of these algorithms through the means of a javascript library named visualize.bundle.js which is most famously used for building flow charts and roadmaps by multiple websites also making there contribution to this cause of learning through the means of graphical representation as <i>"a picture speaks more than a thousand words".</i> In this case its <i>"a thousand lines of code"</i>    </p>
+        <h5>Become a registered user & <span>Contribute</span></h5>
+        <br>
+        <a href="{% url 'register'  %}" class="hire">Sign Up</a>
+    </div>
+      </section>
+  </div>
+
+{% endblock content %}
