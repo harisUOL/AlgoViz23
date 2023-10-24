@@ -1,5 +1,6 @@
 # AlgoViz23
 Senior Project of Bachelors
+<br>
 <img src="/images/Screenshot from 2023-10-24 19-22-12.png" style='{height: 100px; breadth: 100px}'>
 
 ### ABSTRACT
